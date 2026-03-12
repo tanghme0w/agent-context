@@ -1,29 +1,35 @@
-# Claude Skills
+# Agent Context
 
-Custom skills for [Claude Cowork](https://claude.ai) — reusable prompt & reference bundles that extend Claude's capabilities.
-
-## Skills
-
-| Skill | Description |
-|-------|-------------|
-| **feishu-mcp-setup** | Set up the Feishu (Lark) MCP Connector — custom app creation, permission scopes (with batch JSON import), OAuth login, MCP config |
-| **feishu-mcp-usage** | Day-to-day Feishu MCP operations — document CRUD, wiki search, Base/bitable management |
-
-## Installation
-
-Each skill folder can be packaged as a `.skill` file (a zip archive) and installed into Claude Cowork via the "Copy to your skills" button.
+Centralized knowledge base and tooling for AI agent workflows — including reusable Claude Cowork skills and project research docs.
 
 ## Structure
 
 ```
-skills/
-├── feishu-mcp-setup/
-│   ├── SKILL.md                    # Skill definition & instructions
-│   └── references/
-│       └── setup_guide.md          # Detailed setup runbook with permission JSON
-└── feishu-mcp-usage/
-    └── SKILL.md                    # API reference & usage patterns
+agent-context/
+├── claude-cowork-skills/   # Reusable prompt & reference bundles for Claude Cowork
+│   ├── README.md
+│   └── skills/
+│       ├── feishu-mcp-setup/
+│       └── feishu-mcp-usage/
+├── docs/                   # Project research & developer documentation
+│   └── rokid-glasses-yodaos-sprite-developer-guide.md
+├── .gitignore
+└── README.md
 ```
+
+## Modules
+
+### claude-cowork-skills
+
+Custom skills for [Claude Cowork](https://claude.ai). See [claude-cowork-skills/README.md](claude-cowork-skills/README.md) for details.
+
+### docs
+
+Curated research documents and developer references collected during project work.
+
+| Document | Description |
+|----------|-------------|
+| **rokid-glasses-yodaos-sprite-developer-guide.md** | Rokid Glasses (YodaOS-Sprite) developer documentation — SDK architecture, CXR-M/CXR-S API interfaces, official resources |
 
 ## License
 
